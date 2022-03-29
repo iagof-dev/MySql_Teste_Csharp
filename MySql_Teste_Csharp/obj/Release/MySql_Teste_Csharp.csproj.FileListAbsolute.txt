@@ -35,3 +35,43 @@ C:\Users\N3rdy\source\repos\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\My
 C:\Users\N3rdy\source\repos\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.CopyComplete
 C:\Users\N3rdy\source\repos\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.exe
 C:\Users\N3rdy\source\repos\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.pdb
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\MySql_Teste_Csharp.exe.config
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\MySql_Teste_Csharp.exe
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\MySql_Teste_Csharp.pdb
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\BouncyCastle.Crypto.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\Google.Protobuf.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Compression.LZ4.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Hash.xxHash.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\MySql.Data.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Buffers.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Memory.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Numerics.Vectors.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\Ubiety.Dns.Core.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\ZstdNet.dll
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\Google.Protobuf.pdb
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\Google.Protobuf.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Compression.LZ4.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\K4os.Hash.xxHash.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\MySql.Data.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Buffers.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Memory.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Numerics.Vectors.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.AssemblyReference.cache
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.SuggestedBindingRedirects.cache
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.menu_conta.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.Inicio.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.loader.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.Logado.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.login.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.menu_home.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.Properties.Resources.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.registrar.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.GenerateResource.cache
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.CoreCompileInputs.cache
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.csproj.CopyComplete
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.exe
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Release\MySql_Teste_Csharp.pdb

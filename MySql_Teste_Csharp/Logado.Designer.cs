@@ -53,11 +53,10 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-27, -1);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 48);
+            this.panel1.Size = new System.Drawing.Size(1006, 48);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -66,11 +65,11 @@
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(992, 10);
+            this.button1.Location = new System.Drawing.Point(968, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 32);
             this.button1.TabIndex = 4;
@@ -81,7 +80,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MySql_Teste_Csharp.Properties.Resources.github;
-            this.pictureBox1.Location = new System.Drawing.Point(42, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,7 +92,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 14);
+            this.label1.Location = new System.Drawing.Point(50, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 24);
             this.label1.TabIndex = 0;
@@ -160,7 +159,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::MySql_Teste_Csharp.Properties.Resources.output_onlinepngtools__1_;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(13, 232);
+            this.button3.Location = new System.Drawing.Point(12, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(196, 32);
             this.button3.TabIndex = 2;
@@ -177,7 +176,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::MySql_Teste_Csharp.Properties.Resources.output_onlinepngtools__2_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(13, 191);
+            this.button2.Location = new System.Drawing.Point(12, 191);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(196, 32);
             this.button2.TabIndex = 1;
@@ -201,7 +200,6 @@
             this.rounded.Name = "rounded";
             this.rounded.Size = new System.Drawing.Size(656, 496);
             this.rounded.TabIndex = 0;
-            this.rounded.Paint += new System.Windows.Forms.PaintEventHandler(this.rounded_Paint);
             // 
             // menu_animacao
             // 
@@ -218,6 +216,7 @@
             this.Controls.Add(this.menu_formdocker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Logado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logado";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -109,5 +109,8 @@ D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Cshar
 D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.csproj.CopyComplete
 D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.exe
 D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.pdb
-D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.Inicio.resources
 D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.menu_home.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.menu_conta.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.admin_panel.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.inicio_home.resources
+D:\Projetos VS\MySql_Teste_Csharp\MySql_Teste_Csharp\obj\Debug\MySql_Teste_Csharp.Inicio.resources

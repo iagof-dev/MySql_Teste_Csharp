@@ -3,16 +3,37 @@
   <Profiles />
   <Settings>
     <Setting Name="mysql_ip" Type="System.String" Scope="User">
-      <Value Profile="(Default)">database.com</Value>
+      <Value Profile="(Default)">localhost</Value>
     </Setting>
     <Setting Name="mysql_database" Type="System.String" Scope="User">
       <Value Profile="(Default)">cadastro</Value>
     </Setting>
     <Setting Name="mysql_user" Type="System.String" Scope="User">
-      <Value Profile="(Default)">n3rdydzn</Value>
+      <Value Profile="(Default)">root</Value>
     </Setting>
     <Setting Name="mysql_pass" Type="System.String" Scope="User">
-      <Value Profile="(Default)">132490kj@br=</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_email" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="all_loaded" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="user_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_pfp" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_group" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_id" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="test_mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

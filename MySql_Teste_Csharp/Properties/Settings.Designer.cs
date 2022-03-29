@@ -25,7 +25,7 @@ namespace MySql_Teste_Csharp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("database.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
         public string mysql_ip {
             get {
                 return ((string)(this["mysql_ip"]));
@@ -49,7 +49,7 @@ namespace MySql_Teste_Csharp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("n3rdydzn")]
+        [global::System.Configuration.DefaultSettingValueAttribute("root")]
         public string mysql_user {
             get {
                 return ((string)(this["mysql_user"]));
@@ -61,13 +61,97 @@ namespace MySql_Teste_Csharp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("132490kj@br=")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string mysql_pass {
             get {
                 return ((string)(this["mysql_pass"]));
             }
             set {
                 this["mysql_pass"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string user_email {
+            get {
+                return ((string)(this["user_email"]));
+            }
+            set {
+                this["user_email"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string all_loaded {
+            get {
+                return ((string)(this["all_loaded"]));
+            }
+            set {
+                this["all_loaded"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string user_name {
+            get {
+                return ((string)(this["user_name"]));
+            }
+            set {
+                this["user_name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string user_pfp {
+            get {
+                return ((string)(this["user_pfp"]));
+            }
+            set {
+                this["user_pfp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string user_group {
+            get {
+                return ((string)(this["user_group"]));
+            }
+            set {
+                this["user_group"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string user_id {
+            get {
+                return ((string)(this["user_id"]));
+            }
+            set {
+                this["user_id"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string test_mode {
+            get {
+                return ((string)(this["test_mode"]));
+            }
+            set {
+                this["test_mode"] = value;
             }
         }
     }

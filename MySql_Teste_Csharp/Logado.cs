@@ -23,6 +23,7 @@ namespace MySql_Teste_Csharp
         {
             InitializeComponent();
             Console.WriteLine("Menu Form | Loaded!");
+            menu_aberto = 0;
             definirform(new menu_home());
         }
         public void definirform(object Form)
@@ -36,49 +37,20 @@ namespace MySql_Teste_Csharp
             this.menu_formdocker.Tag = menu_func;
             menu_func.Show();
         }
-        public class NativeMethods
-        {
-            [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-            public static extern System.IntPtr CreateRoundRectRgn
-             (
-              int nLeftRect, // x-coordinate of upper-left corner
-              int nTopRect, // y-coordinate of upper-left corner
-              int nRightRect, // x-coordinate of lower-right corner
-              int nBottomRect, // y-coordinate of lower-right corner
-              int nWidthEllipse, // height of ellipse
-              int nHeightEllipse // width of ellipse
-             );
-
-            [System.Runtime.InteropServices.DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
-            public static extern bool DeleteObject(System.IntPtr hObject);
-            [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
-            public static extern bool ReleaseCapture();
-
-            [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
-            public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        }
-
-
-        private void rounded_Paint(object sender, PaintEventArgs e)
-        {
-            IntPtr ptr = NativeMethods.CreateRoundRectRgn(5, 5, this.Width, this.Height, 20, 20); // _BoarderRaduis can be adjusted to your needs, try 15 to start.
-            this.Region = System.Drawing.Region.FromHrgn(ptr);
-            NativeMethods.DeleteObject(ptr);
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Logado log = new Logado();
-            Form voltar = new Inicio();
-            voltar.Show();
-            log.Close();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            DialogResult result_msg = MessageBox.Show("Deseja sair de sua conta?", "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result_msg == DialogResult.Yes)
+            {
+                //sim
+                //Inicio.ActiveForm.
+                this.Close();
+                Logado log = new Logado();
+                Form voltar = new Inicio();
+                voltar.Show();
+                log.Close();
+            }
+            
         }
 
         private bool mouseDown;
@@ -127,26 +99,26 @@ namespace MySql_Teste_Csharp
             //175 = Menu Aberto
             //67 = menu fechado
             //menu.Location
+
             menu_animacao.Stop();
-            if (menu_aberto == 0)
-            {
-                Console.WriteLine("Logado Form | Menu está fechado!");
-                menu_aberto = 1;
-                menu_animacao.Start();
-                
-            }
-            else
+            if (menu_aberto == 1)
             {
                 Console.WriteLine("Logado Form | Menu está aberto!");
                 menu_aberto = 0;
                 menu_animacao.Start();
-                
+            }
+            else
+            {
+                Console.WriteLine("Logado Form | Menu está fechado!");
+                menu_aberto = 1;
+                menu_animacao.Start();
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Logado Form | Debug=Mouse_Clicked USER Button");
+            definirform(new menu_conta());
         }
         private void menu_animacao_Tick(object sender, EventArgs e)
         {

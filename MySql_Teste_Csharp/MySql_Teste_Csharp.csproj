@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>github-_1_.ico</ApplicationIcon>
+    <ApplicationIcon>logo-dev.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -107,6 +107,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_panel.Designer.cs">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio_home.Designer.cs">
+      <DependentUpon>inicio_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_conta.Designer.cs">
+      <DependentUpon>menu_conta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,15 @@
     <Compile Include="registrar.Designer.cs">
       <DependentUpon>registrar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="admin_panel.resx">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio_home.resx">
+      <DependentUpon>inicio_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_conta.resx">
+      <DependentUpon>menu_conta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,13 +215,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chinese.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chinese-tom-tom-and-jerry.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="github-_1_.ico" />
+    <Content Include="logo-dev.ico" />
+    <None Include="Resources\dev.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\registration.png" />
+    <None Include="Resources\Portrait_Placeholder.png" />
     <None Include="Resources\output-onlinepngtools.png" />
     <None Include="Resources\output-onlinepngtools %281%29.png" />
     <None Include="Resources\output-onlinepngtools %282%29.png" />

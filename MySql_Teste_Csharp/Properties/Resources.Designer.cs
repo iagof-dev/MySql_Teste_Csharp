@@ -61,12 +61,22 @@ namespace MySql_Teste_Csharp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] chinese {
+        internal static System.Drawing.Bitmap _lock {
             get {
-                object obj = ResourceManager.GetObject("chinese", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dev {
+            get {
+                object obj = ResourceManager.GetObject("dev", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -196,6 +206,26 @@ namespace MySql_Teste_Csharp.Properties {
         internal static System.Drawing.Bitmap output_onlinepngtools__3_1 {
             get {
                 object obj = ResourceManager.GetObject("output-onlinepngtools (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Portrait_Placeholder {
+            get {
+                object obj = ResourceManager.GetObject("Portrait_Placeholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registration {
+            get {
+                object obj = ResourceManager.GetObject("registration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
