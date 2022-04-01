@@ -53,8 +53,15 @@ namespace MySql_Teste_Csharp
                 Console.WriteLine("Registro Form | Criando Conexão com MYSQL/Server");
 
                 //dados á ser enviado pro banco
-                string sql = "insert into registro values (DEFAULT, '" + registro_user.Text + "', '" + registro_email.Text + "', '" + registro_senha.Text + "', DEFAULT, DEFAULT);";
+                string sql = "insert into registro values (DEFAULT, '" + registro_user.Text + "', '" + registro_email.Text + "', '" + registro_senha.Text + "', NULL, DEFAULT, DEFAULT);";
                 Console.WriteLine("Registro Form | Registrando Dados para enviar, Debug: U=" + registro_user.Text + "E=" + registro_email.Text + "P=" + registro_senha.Text);
+
+                string path_image = string.Empty;
+                path_image = Properties.Resources.Portrait_Placeholder.ToString();
+                
+
+
+
 
                 //enviar dados usando comando
 

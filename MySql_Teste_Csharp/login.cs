@@ -46,69 +46,42 @@ namespace MySql_Teste_Csharp
             }
             else
             {
-                Properties.Settings.Default.test_mode = "0";
+                Properties.Settings.Default.user_email = login_usuario.Text;
+                Properties.Settings.Default.Save();
                 LoginSystem(login_usuario.Text, login_senha.Text);
             }
         }
         private string LoginSystem(string usuario, string senha)
         {
-
             string retorno = "";
-            ////instância da conexão
             Console.WriteLine("Login Form | Criando conexão");
             MySqlConnection conn = new MySqlConnection(server_Data);
-            //comando sql que dá um count 
-            //na tabela se existirem usuario e senha
-            //com os dados informados
-            string comando = "use cadastro; SELECT * FROM registro WHERE email=@email AND senha=@senha";
-            Console.WriteLine("Login Form | Procurando registro");
-            //instância do comando
+            string comando = "use cadastro; SELECT * FROM registro WHERE email=@email AND senha=@senha; select * from registro where email=@email;";
             MySqlCommand cmd = new MySqlCommand(comando, conn);
-            Console.WriteLine("Login Form | Registrando comando");
-            //preenchimento dos parâmetros
-            cmd.Parameters.AddWithValue("@email", usuario);
-            Console.WriteLine("Login Form | Definindo info email");
+            cmd.Parameters.AddWithValue("@email", Properties.Settings.Default.user_email);
             cmd.Parameters.AddWithValue("@senha", senha);
-            Console.WriteLine("Login Form | Definindo info senha");
-            //abro conexão
+
             conn.Open();
-            Console.WriteLine("Login Form | Abrindo conexão com MySql");
-            //instância do leitor
             MySqlDataReader leitor = cmd.ExecuteReader();
-            Console.WriteLine("Login Form | Lendo registros");
-            //se há linhas
             if (leitor.HasRows)
             {
                 leitor.Read();
-                Console.WriteLine("Login Form | Lendo Usuários");
-                //string retorno recebe o nivel de acessos
-                //do usuário
-                Console.WriteLine("Login Form | Usuário Encontrado! enviando mensagem ao usuário de Sucesso");
-                Properties.Settings.Default.user_email = login_usuario.Text;
-                Properties.Settings.Default.Save();
-                MessageBox.Show("Dados Informados estão Corretos!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
                 conn.Close();
-                Console.WriteLine("Login Form | Conexão com MySql FECHADA!");
+
+                
 
                 Form formis = new Logado();
-                Console.WriteLine("Login Form | Abrindo Logado.cs");
                 Inicio.ActiveForm.Hide();
                 formis.ShowDialog();
-                Console.WriteLine("Login Form | Fechando login.cs");
-                //retorno = leitor["*"].ToString();
 
             }
             else
             {
-                Console.WriteLine("Login Form | Erro Encontrado, UsPrbNONE");
                 conn.Close();
-                Console.WriteLine("Login Form | Conexão com MySql FECHADA!");
                 MessageBox.Show("Dados Incorretos", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //fecho conexão
-            
-            //retorno o nível de acesso
             return retorno;
         }
 

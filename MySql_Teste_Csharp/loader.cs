@@ -26,20 +26,6 @@ namespace MySql_Teste_Csharp
             setinfo();
             abrirform();
 
-            //System.Net.WebClient vup = new System.Net.WebClient();
-            //string upverify = vup.DownloadString("http://localhost/teste_up.txt");
-
-            //if (upverify == Application.ProductVersion)
-            //{
-            //  Console.WriteLine("Loader Form | Versão Mais Recente sendo utilizada!");
-            //setinfo();
-            //abrirform();
-            //}
-            //else
-            //{
-            //  MessageBox.Show("Versão Desatualizada!", "Atualização!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //Application.Exit();
-            //}
         }
 
         public void abrirform()
@@ -49,7 +35,7 @@ namespace MySql_Teste_Csharp
         }
 
         public void setinfo()
-            {
+        {
             Properties.Settings.Default.user_name = String.Empty;
             Properties.Settings.Default.user_pfp = String.Empty;
             Properties.Settings.Default.user_group = String.Empty;
@@ -57,6 +43,23 @@ namespace MySql_Teste_Csharp
             Properties.Settings.Default.all_loaded = String.Empty;
             Properties.Settings.Default.user_email = String.Empty;
             Properties.Settings.Default.Save();
+        }
+        public void v_update()
+            {
+            System.Net.WebClient vup = new System.Net.WebClient();
+            string upverify = vup.DownloadString("http://localhost/teste_up.txt");
+
+            if (upverify == Application.ProductVersion)
+            {
+              Console.WriteLine("Loader Form | Versão Mais Recente sendo utilizada!");
+              setinfo();
+              abrirform();
+            }
+            else
+            {
+                MessageBox.Show("Versão Desatualizada!", "Atualização!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit();
+            }
         }
 
     }

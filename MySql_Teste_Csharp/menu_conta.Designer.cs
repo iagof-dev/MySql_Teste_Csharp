@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.admin_button = new System.Windows.Forms.Button();
             this.usr_foto = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.usr_savepfp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.usr_foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,12 +161,39 @@
             this.usr_foto.TabIndex = 8;
             this.usr_foto.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(233, 298);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(65, 21);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Escolher";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // usr_savepfp
+            // 
+            this.usr_savepfp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usr_savepfp.ForeColor = System.Drawing.Color.White;
+            this.usr_savepfp.Location = new System.Drawing.Point(240, 323);
+            this.usr_savepfp.Name = "usr_savepfp";
+            this.usr_savepfp.Size = new System.Drawing.Size(51, 21);
+            this.usr_savepfp.TabIndex = 14;
+            this.usr_savepfp.Text = "Salvar!";
+            this.usr_savepfp.UseVisualStyleBackColor = true;
+            this.usr_savepfp.Visible = false;
+            this.usr_savepfp.Click += new System.EventHandler(this.usr_savepfp_Click);
+            // 
             // menu_conta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(940, 496);
+            this.Controls.Add(this.usr_savepfp);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.admin_button);
             this.Controls.Add(this.txt_cargo);
             this.Controls.Add(this.label4);
@@ -197,5 +226,7 @@
         private System.Windows.Forms.Label txt_cargo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button admin_button;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button usr_savepfp;
     }
 }

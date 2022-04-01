@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql_Teste_Csharp;
 using System.Runtime.InteropServices;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace MySql_Teste_Csharp
 {
@@ -23,6 +25,7 @@ namespace MySql_Teste_Csharp
         {
             InitializeComponent();
             Console.WriteLine("Menu Form | Loaded!");
+            getinfo();
             menu_aberto = 0;
             definirform(new menu_home());
         }
@@ -149,6 +152,51 @@ namespace MySql_Teste_Csharp
 
                 }
             }
+        }
+
+        private void getinfo()
+        {
+            string server_Data = "datasource=" + Properties.Settings.Default.mysql_ip + ";username=" + Properties.Settings.Default.mysql_user + ";password=" + Properties.Settings.Default.mysql_pass + ";database=" + Properties.Settings.Default.mysql_database;
+            MySqlConnection conn = new MySqlConnection(server_Data);
+            string comando = "use cadastro; select * from registro where email=@email;";
+            MySqlCommand cmd = new MySqlCommand(comando, conn);
+            cmd.Parameters.AddWithValue("@email", Properties.Settings.Default.user_email);
+            conn.Open();
+            MySqlDataReader leitor = cmd.ExecuteReader();
+            try
+            {
+                leitor.Read();
+                var id = leitor.GetString(0);
+                var usuario = leitor.GetString(1);
+                var cargo = leitor.GetString(5);
+                
+
+                Properties.Settings.Default.all_loaded = "1";
+                Properties.Settings.Default.user_name = ($"{usuario}");
+                Properties.Settings.Default.user_group = ($"{cargo}");
+                Properties.Settings.Default.user_id = ($"{id}");
+                Properties.Settings.Default.Save();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Conta SubForm  | Erro!");
+                Console.WriteLine("Erro debug: " + ex.Message);
+                //Mensagem de Erro
+                Console.WriteLine("Conta SubForm | Enviando Logs para Usuario");
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //Depois de dar certo ou errado oq fazer; Exemplo=Fechar Conexão
+                Console.WriteLine("Conta SubForm | Conexão MySql foi fechada com sucesso!");
+                conn.Close();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
